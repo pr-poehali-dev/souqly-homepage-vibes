@@ -109,7 +109,8 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				'rubik': ['Rubik', 'sans-serif'],
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
 				'arabic': ['Noto Sans Arabic', 'sans-serif']
 			},
 			keyframes: {
