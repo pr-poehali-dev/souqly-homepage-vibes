@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import Logo from '@/components/ui/logo';
 
 export default function Index() {
   const [language, setLanguage] = useState<'en' | 'ar'>('en');
@@ -162,12 +163,7 @@ export default function Index() {
       <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">S</span>
-              </div>
-              <span className="text-2xl font-playfair font-bold text-foreground">Souqly</span>
-            </div>
+            <Logo />
             
             <div className="flex items-center space-x-4">
               <Button
@@ -374,11 +370,8 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-lg">S</span>
-                </div>
-                <span className="text-2xl font-playfair font-bold">Souqly</span>
+              <div className="mb-4">
+                <Logo textClassName="text-background" />
               </div>
               <p className="text-background/80 font-inter text-sm">
                 {language === 'en' 
